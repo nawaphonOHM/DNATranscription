@@ -91,7 +91,7 @@ public class DNATrans{
         if(c == 'T' || c == 'U') return 0;
         else if(c == 'C') return 1;
         else if(c == 'A') return 2;
-        else if(c == 'G')return 3;
+        else if(c == 'G') return 3;
         else return -1;
     }
 
