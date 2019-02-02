@@ -70,6 +70,10 @@ public class DNATrans{
             for(char c : inputchars){
                 ABC[counter] = convertedBaseToNum(c);
 
+                if(ABC[counter] == -1){
+                    System.exit(-1);
+                }
+
                 if(counter % 3 == 2){
                     tempINT = proteinTableNum[ABC[counter - 2]][ABC[counter - 1]][ABC[counter]];
                     if(tempINT == 3) foundStartPoint = foundStartPoint | true;
