@@ -64,8 +64,8 @@ public class DNATrans{
         inputchars = input.toCharArray();
         int tempINT = 0;
 
-        if(input.length() < 3){
-            System.err.println("length must be >= 3.");
+        if(input.length() < 3 || input.length() % 3 != 0){
+            System.err.println("length must be >= 3 or is mutiple of 3.");
         } else {
             for(char c : inputchars){
                 ABC[counter] = convertedBaseToNum(c);
