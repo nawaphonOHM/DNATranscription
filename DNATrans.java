@@ -8,7 +8,7 @@ public class DNATrans{
         String input;
         char[] inputchars;
         int[] ABC = new int[3];
-        Boolean foundStartPoint = false;
+        boolean foundStartPoint = false;
         int counter = 0;
         int[][][] proteinTableNum = {
             {
