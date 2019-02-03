@@ -4,7 +4,7 @@ import java.util.HashMap;
 public class DNATrans{
     public static void main(String[] args){
         Console terminal = System.console();
-        HashMap proteinTable = new HashMap<Integer, String>();
+        HashMap<Integer, String> proteinTable = new HashMap<Integer, String>();
         String input;
         char[] inputchars;
         int[] ABC = new int[3];
