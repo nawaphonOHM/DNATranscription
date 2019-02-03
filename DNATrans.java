@@ -63,6 +63,7 @@ public class DNATrans{
         input = input.toUpperCase();
         inputchars = input.toCharArray();
         int tempINT = 0;
+        String tempSTR;
 
         if(input.length() < 3 || input.length() % 3 != 0){
             System.err.println("length must be >= 3 or is mutiple of 3.");
@@ -77,6 +78,7 @@ public class DNATrans{
                 if(counter % 3 == 2){
                     tempINT = proteinTableNum[ABC[counter - 2]][ABC[counter - 1]][ABC[counter]];
                     if(tempINT == 3) foundStartPoint = foundStartPoint | true;
+                    if(tempINT == 10) System.exit(0);
                     if(foundStartPoint){
                         System.out.print(proteinTable.get(tempINT) + "|");
                     }
