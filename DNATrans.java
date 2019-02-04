@@ -1,10 +1,10 @@
 import java.io.Console;
-import java.util.HashMap;
+import java.util.Hashtable;
 
 public class DNATrans{
     public static void main(String[] args){
         Console terminal = System.console();
-        HashMap<Integer, String> proteinTable = new HashMap<Integer, String>();
+        Hashtable<Integer, String> proteinTable = new Hashtable<Integer, String>();
         String input;
         char[] inputchars;
         int[] ABC = new int[3];
