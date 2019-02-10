@@ -63,7 +63,6 @@ public class DNATrans{
         input = input.toUpperCase();
         inputchars = input.toCharArray();
         int tempINT = 0;
-        String tempSTR;
 
         if(input.length() < 3 || input.length() % 3 != 0){
             System.err.println("length must be >= 3 or is mutiple of 3.");
