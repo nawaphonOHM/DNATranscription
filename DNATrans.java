@@ -76,8 +76,8 @@ public class DNATrans{
 
                 if(counter % 3 == 2){
                     tempINT = proteinTableNum[ABC[counter - 2]][ABC[counter - 1]][ABC[counter]];
-                    if(tempINT == 3) foundStartPoint = foundStartPoint | true;
                     if(tempINT == 10) System.exit(0);
+                    if(tempINT == 3) foundStartPoint = foundStartPoint | true;
                     if(foundStartPoint){
                         System.out.print(proteinTable.get(tempINT) + "|");
                     }
